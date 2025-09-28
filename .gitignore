@@ -1,0 +1,34 @@
+# Ignorer les fichiers/dossiers Terraform dans flow/
+flow/.terraform/
+flow/*.tfstate
+flow/*.tfstate.backup
+flow/.terraform.lock.hcl
+
+# Ignorer les fichiers Python temporaires dans flow/
+flow/__pycache__/
+flow/*.py[cod]
+flow/*$py.class
+flow/*.so
+
+# Ignorer les environnements virtuels Python dans flow/
+flow/venv/
+flow/.env/
+
+# Ignorer les fichiers de cache et IDE dans flow/
+flow/.idea/
+flow/.vscode/
+flow/.DS_Store
+
+# Ignorer les fichiers de variables sensibles
+flow/*.tfvars
+flow/*.tfvars.secret
+flow/.env
+
+# Ignorer les fichier zip
+*.zip
+
+# secrets
+.streamlit/
+
+#working directory
+zz_work/
